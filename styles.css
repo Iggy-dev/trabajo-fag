@@ -87,6 +87,31 @@ header h1 {
     font-size: 1.1em;
 }
 
+/* Selector de Opciones */
+.product-options {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.product-options label {
+    font-size: 1.1em;
+    color: #333;
+    margin-right: 10px;
+}
+
+.product-options select, .product-options input[type="number"] {
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid #ff4b2b;
+    border-radius: 8px;
+    font-size: 1em;
+    transition: border-color 0.3s;
+}
+
+.product-options select:focus, .product-options input[type="number"]:focus {
+    border-color: #ff416c;
+}
+
 #buy-button {
     background: linear-gradient(135deg, #ff416c, #ff4b2b);
     color: #fff;
@@ -98,6 +123,7 @@ header h1 {
     font-size: 1.2em;
     font-weight: bold;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
 }
 
 #buy-button:hover {
@@ -164,4 +190,4 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
-} 
+}
