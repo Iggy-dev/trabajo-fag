@@ -23,9 +23,22 @@
                     <li><strong>Capacidad Generosa:</strong> Con capacidad de 500 ml, perfecto para bebidas refrescantes, cócteles y más.</li>
                     <li><strong>Material Duradero:</strong> Fabricado con plástico de alta calidad y libre de BPA, seguro para tu salud y resistente a los golpes.</li>
                 </ul>
-                <h3>¡Haz de tus Fiestas una Experiencia Inolvidable!</h3>
-                <p>Imagina poder bailar y disfrutar sin preocuparte por los derrames, mientras mantienes tu bebida segura y a mano. El Vaso de Fiesta te permite hacer justamente eso: mantener el espíritu festivo sin interrupciones.</p>
-                <p>Ya sea una fiesta en la piscina, una barbacoa con amigos o una salida a la playa, nuestro vaso es ideal para cualquier ocasión. Olvídate de los vasos de plástico desechables que contaminan y opta por una solución sostenible y práctica.</p>
+                <div class="product-options">
+                    <label for="color">Color:</label>
+                    <select id="color">
+                        <option value="rojo">Rojo</option>
+                        <option value="azul">Azul</option>
+                        <option value="verde">Verde</option>
+                        <option value="amarillo">Amarillo</option>
+                    </select>
+                    <label for="size">Talla:</label>
+                    <select id="size">
+                        <option value="500ml">500 ml</option>
+                        <option value="750ml">750 ml</option>
+                    </select>
+                    <label for="quantity">Cantidad:</label>
+                    <input type="number" id="quantity" min="1" value="1">
+                </div>
                 <button id="buy-button">Comprar Ahora</button>
                 <p class="special-offer">Oferta especial: Llevándote 4 vasos obtienes un 20% de descuento. ¡No te lo pierdas!</p>
             </div>
@@ -42,7 +55,7 @@
     </main>
     <footer>
         <p>&copy; 2024 Vaso de Fiesta. Todos los derechos reservados.</p>
-        <p>Siguenos en nuestras redes sociales para más ofertas y novedades.</p>
+        <p>Síguenos en nuestras redes sociales para más ofertas y novedades.</p>
     </footer>
     <script src="script.js"></script>
 </body>
