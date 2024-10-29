@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/cart/styles.css">
+</head>
+<body>
+    <header class="cart-container-header">
+            <h1>Vaso de Fiesta con Tapa de Seguridad y Goma Antideslizante</h1>
+
+            <button id="goback-button">🛒 Volver</button>
+    </header>
+    <div class="cart-container">
+        <h1>Tu Carrito de Compras</h1>
+        <div id="cart-items"></div>
+        <div class="cart-summary">
+            <h2>Total: <span id="cart-total">$0.00</span></h2>
+        </div>
+        <button id="checkout-button">Pagar</button>
+    </div>
+
+    <div id="checkout-modal">
+        <div class="modal-content">
+            <h3>¡Gracias por tu compra!</h3>
+            <p>Tu pedido ha sido confirmado y se enviará entre 3-5 días.</p>
+            <p>ID de Pedido: <span id="order-id"></span></p>
+            <button onclick="closeModal()">Cerrar</button>
+        </div>
+    </div>
+    <script src="cart.js"></script>
+</body>
+</html>
