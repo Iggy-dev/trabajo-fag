@@ -1,46 +1,60 @@
+/* Estilos Generales */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 body {
-    background-color: #f8f9fa;
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
     color: #333;
+    line-height: 1.6;
 }
 
 header {
-    background-color: #343a40;
+    background: linear-gradient(135deg, #ff416c, #ff4b2b);
     color: #fff;
     text-align: center;
-    padding: 20px;
+    padding: 40px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-transform: uppercase;
 }
 
-main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 80vh;
+header h1 {
+    font-size: 2.5em;
+    font-weight: 700;
 }
 
+/* Estilos del Contenedor del Producto */
 .product-display {
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     overflow: hidden;
     width: 90%;
-    max-width: 800px;
+    max-width: 1000px;
+    margin: 40px auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 20px;
+    transition: transform 0.3s ease-in-out;
 }
 
-.product-display img {
+.product-display:hover {
+    transform: translateY(-10px);
+}
+
+.product-image {
     width: 100%;
-    max-width: 300px;
+    max-width: 400px;
     border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.product-image:hover {
+    transform: scale(1.05);
 }
 
 .product-info {
@@ -49,41 +63,105 @@ main {
 }
 
 .product-info h2 {
+    font-size: 2em;
     margin-bottom: 15px;
-    color: #343a40;
+    color: #ff4b2b;
 }
 
 .product-info p {
-    font-size: 1.1em;
+    font-size: 1.2em;
     margin-bottom: 20px;
+    color: #555;
 }
 
 .product-info ul {
-    list-style-type: none;
-    margin-bottom: 20px;
+    list-style-type: disc;
+    text-align: left;
+    margin: 20px 0;
+    padding-left: 40px;
+    color: #333;
 }
 
 .product-info li {
     margin: 10px 0;
+    font-size: 1.1em;
 }
 
 #buy-button {
-    background-color: #28a745;
+    background: linear-gradient(135deg, #ff416c, #ff4b2b);
     color: #fff;
     border: none;
     padding: 15px 30px;
-    border-radius: 5px;
+    border-radius: 50px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s, transform 0.3s;
+    font-size: 1.2em;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 #buy-button:hover {
-    background-color: #218838;
+    background: linear-gradient(135deg, #ff4b2b, #ff416c);
+    transform: scale(1.1);
+}
+
+.special-offer {
+    color: #ff4b2b;
+    font-size: 1.3em;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+/* Sección de Testimonios */
+.testimonials {
+    background: linear-gradient(135deg, #ffffff, #f2f2f2);
+    padding: 40px;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 800px;
+    margin: 40px auto;
+    text-align: center;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.testimonials h2 {
+    font-size: 2em;
+    color: #ff416c;
+    margin-bottom: 20px;
+}
+
+.testimonial {
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.testimonial p {
+    font-size: 1.1em;
+    color: #555;
 }
 
 footer {
     text-align: center;
-    padding: 15px;
-    background-color: #343a40;
+    padding: 20px;
+    background: #ff416c;
     color: #fff;
+    font-size: 1em;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.3);
 }
+
+footer p {
+    margin: 10px 0;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+} 
