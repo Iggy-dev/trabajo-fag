@@ -10,8 +10,9 @@ function renderCart() {
     } else {
         cart.forEach((item, index) => {
             const cartItem = document.createElement('div');
-            cartItem.className = 'cart-item';
+            cartItem.className = 'cart-item'; // Esta línea debe estar asegurada para todos los elementos            
             cartItem.innerHTML = `
+                <img src="./escudo-coletero-tapa-vasos-removebg-preview.png" style="width: 50px; height: 50px;">
                 <div class="cart-item-details">
                     <strong>${item.name}</strong> - Color: ${item.color}, Talla: ${item.size}
                 </div>

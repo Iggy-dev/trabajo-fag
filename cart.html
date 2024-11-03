@@ -6,6 +6,7 @@
     <title>Carrito de Compras</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./cart/styles.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.1.1/css/all.css">
 </head>
 <body>
     <header class="cart-container-header">
@@ -23,7 +24,8 @@
     
     <div class="cart-container">
         <h1>Tu Carrito de Compras</h1>
-        <div id="cart-items"></div>
+        <div id="cart-items">
+        </div>
         <div class="cart-summary">
             <h2>Total: <span id="cart-total">$0.00</span></h2>
         </div>
@@ -43,6 +45,22 @@
             <button onclick="closeModal()">Cerrar</button>
         </div>
     </div>
+    <footer>
+        <video autoplay muted loop>
+          <source src="./video.mp4" type="video/mp4">
+        </video>
+        <div class="footer-container">
+            <div class="footer-content">
+                <p>&copy; 2024 NO CUP. Todos los derechos reservados.</p>
+                <p>Síguenos en nuestras redes sociales para más ofertas y novedades.</p>
+            </div>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.x.com/"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+      </footer>   
     <script src="./cart.js"></script>
 </body>
 </html>
