@@ -45,7 +45,6 @@ function removeFromCart(index) {
     renderCart();
 }
 
-console.log("Carrito cargado: ", cart);
 
 document.addEventListener('DOMContentLoaded', function() {
     renderCart();

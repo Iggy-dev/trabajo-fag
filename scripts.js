@@ -21,7 +21,6 @@ document.getElementById("add-to-cart-button").addEventListener("click", function
     addNotificationToQueue("Producto añadido al carrito!");
 });
 
-// Mostrar el carrito al hacer clic en el botón del carrito
 document.getElementById("cart-button").addEventListener("click", function() {
     window.location.href = 'cart.html'; // Redirigir a la página de carrito
 });
