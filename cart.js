@@ -50,9 +50,9 @@ console.log("Carrito cargado: ", cart);
 document.addEventListener('DOMContentLoaded', function() {
     renderCart();
 
-    document.getElementById('goback-button').addEventListener('click', function() {
-        window.location.href = 'index.html';
-    });
+    document.getElementById('goback-button').onclick = function() {
+        window.history.back();
+    };    
 
     document.getElementById('checkout-button').addEventListener('click', function() {
         if (cart.length === 0) {
