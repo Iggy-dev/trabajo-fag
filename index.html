@@ -6,6 +6,7 @@
     <title>Vaso de Fiesta – Diversión y Seguridad</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.1.1/css/all.css">
     <style>
         body {
             font-family: 'Roboto', sans-serif;
@@ -22,20 +23,25 @@
         </video>
             <h1>Vaso de Fiesta con Tapa de Seguridad y Goma Antideslizante</h1>
             <div class="cart-container">
-                <button id="cart-button">🛒 Carrito (<span id="cart-count">0</span>)</button>
+                <button id="cart-button" class="fancy" style="margin-top: 2vh;">
+                    <span class="top-key"></span>
+                    <span class="text">🛒 Carrito (<span id="cart-count">0</span>)</span>
+                    <span class="bottom-key-1"></span>
+                    <span class="bottom-key-2"></span>
+                </button>
             </div>
     </header>
     <main>
         <section class="product-display">
-            <img src="https://www.mayjan.es/wp-content/uploads/2022/09/escudo-coletero-tapa-vasos.png" alt="Vaso de fiesta con tapa y goma" class="product-image">
+            <img src="./escudo-coletero-tapa-vasos-removebg-preview.png" alt="Vaso de fiesta con tapa y goma" class="product-image">
             <div class="product-info">
                 <h2>El Vaso Ideal para tus Fiestas</h2>
                 <p>Vaso con tapa segura y goma antideslizante, perfecto para disfrutar sin preocupaciones.</p>
                 <ul>
-                    <li>✅ <strong>Evita derrames</strong></li>
-                    <li>✅ <strong>Goma antideslizante</strong></li>
-                    <li>✅ <strong>Diseño colorido</strong></li>
-                    <li>✅ <strong>Material seguro y duradero</strong></li>
+                    <li><i class="fa-solid fa-check"></i> <strong>Evita derrames</strong></li>
+                    <li><i class="fa-solid fa-check"></i> <strong>Goma antideslizante</strong></li>
+                    <li><i class="fa-solid fa-check"></i> <strong>Diseño colorido</strong></li>
+                    <li><i class="fa-solid fa-check"></i> <strong>Material seguro y duradero</strong></li>
                 </ul>
                 <div class="product-options">
                     <label for="color">Color:</label>
@@ -57,8 +63,14 @@
                     </select>
                     <label for="quantity">Cantidad:</label>
                     <input type="number" id="quantity" min="1" value="1">
+                    <button id="add-to-cart-button" class="fancy" style="margin-top: 2vh;">
+                        <span class="top-key"></span>
+                        <span class="text">Añadir al Carrito </span>
+                        <span class="bottom-key-1"></span>
+                        <span class="bottom-key-2"></span>
+                    </button>
                 </div>
-                <button id="add-to-cart-button">Añadir al Carrito</button>
+
                 <p class="special-offer">Oferta especial: Llévate 4 vasos y obtén un 20% de descuento.</p>
             </div>
         </section>
@@ -100,8 +112,17 @@
         <video autoplay muted loop>
           <source src="./video.mp4" type="video/mp4">
         </video>
-        <p>&copy; 2024 Vaso de Fiesta. Todos los derechos reservados.</p>
-        <p>Síguenos en nuestras redes sociales para más ofertas y novedades.</p>
+        <div class="footer-container">
+            <div class="footer-content">
+                <p>&copy; 2024 Vaso de Fiesta. Todos los derechos reservados.</p>
+                <p>Síguenos en nuestras redes sociales para más ofertas y novedades.</p>
+            </div>
+            <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
       </footer>      
     <script src="scripts.js"></script>
 </body>

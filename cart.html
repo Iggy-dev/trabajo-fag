@@ -9,8 +9,16 @@
 </head>
 <body>
     <header class="cart-container-header">
+        <video autoplay muted loop>
+            <source src="./video.mp4" type="video/mp4">
+        </video>
             <h1>Vaso de Fiesta con Tapa de Seguridad y Goma Antideslizante</h1>
-            <button id="goback-button" aria-label="Volver al catálogo de productos">🛒 Volver</button>
+            <button id="goback-button" class="fancy">
+                <span class="top-key"></span>
+                <span class="text">VOLVER </span>
+                <span class="bottom-key-1"></span>
+                <span class="bottom-key-2"></span>
+            </button>
         </header>
     
     <div class="cart-container">
@@ -19,7 +27,12 @@
         <div class="cart-summary">
             <h2>Total: <span id="cart-total">$0.00</span></h2>
         </div>
-        <button id="checkout-button">Pagar</button>
+        <button class="fancy" id="checkout-button">
+            <span class="top-key"></span>
+            <span class="text">PAGAR</span>
+            <span class="bottom-key-1"></span>
+            <span class="bottom-key-2"></span>
+        </button>
     </div>
 
     <div id="checkout-modal">
