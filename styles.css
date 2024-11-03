@@ -1,9 +1,13 @@
-/* Estilos Generales */
+@font-face {
+  font-family: 'CabinetGrotesk-Black';
+  src: url('/CabinetGrotesk-Black.ttf') format('truetype');
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'CabinetGrotesk-Black', sans-serif;
 }
 
 body {
@@ -187,25 +191,59 @@ main {
   padding: 20px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
   text-align: center;
-}
-
-.testimonials h2 {
-  font-size: 1.6em;
-  color: #ff416c;
-  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  border-bottom: 0.3vh solid #000000;
 }
 
 .testimonial {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
   background: #f8f8f8;
-  border-radius: 8px;
-  padding: 15px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
-  margin-bottom: 15px;
+  border-radius: 16px;
+  box-shadow: 20px 20px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.5s ease;
+  overflow: hidden;
 }
 
-.testimonial p {
+.testimonial:hover {
+  transform: translateY(-5px);
+}
+
+.container {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.profile-picture {
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+p {
+  margin: 0;
+  color: #333;
   font-size: 1em;
-  color: #555;
+}
+
+@keyframes rotation_481 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 footer {
